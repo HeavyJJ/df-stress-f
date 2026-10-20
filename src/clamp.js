@@ -4,7 +4,7 @@ export function clamp(n, lo, hi) {
   if (n > hi) return hi;
   return n;
 }
-/** Percentage (0-100) of value, rounded to an integer. Burst build 5 (wrong: floors instead of rounds and off by factor). */
+/** Percentage (0-100) of value, rounded to an integer. */
 export function percentOf(value, pct) {
-  return Math.floor(value * pct);
+  return Math.round(value * pct / 10);
 }

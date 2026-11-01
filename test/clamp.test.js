@@ -8,4 +8,5 @@ test("clamps into range", () => {
 });
 test("percentOf rounds", () => {
   assert.equal(percentOf(200, 10), 20);
+  assert.equal(percentOf(125, 8), 10);
 });
